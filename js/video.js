@@ -1,13 +1,11 @@
 var video;
 
 window.addEventListener("load", function() {
-	console.log("Good job opening the window")
+	console.log("Good job opening the window");
 
-video = document.getElementById("player1");
+	video = document.getElementById("player1");
 	video.autoplay = false;
 	video.loop = false;
-
-	document.getElementById("volume").textContent = video.volume * 100 + "%";
 
 	document.getElementById("play").addEventListener("click", function() {
 		video.play();
